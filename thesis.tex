@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper,twoside,openright]{report}                          % openright:  Makes chapters begin only on right side. twoside:    print on both sides.
+
+\usepackage[a4paper,left=3.5cm, right=2.5cm, top=3.5cm, bottom=3.5cm]{geometry}
+\usepackage[english]{babel}                                                     % Sets language, used for smart cap.
+\usepackage{graphicx}                                                           % Makes it possible to import external graphics.
+\usepackage[latin1]{inputenc}                                                   % sets encoding to utf8.
+\usepackage[square, numbers]{natbib}                                            % Author-year & numbered references + other bibliographystyles.
+\usepackage{listings}	                                                        % Typeset programming code
+\usepackage{verbatim}					                                        % show code, commands, ...
+\usepackage{hyperref}					                                        % Hyperlinks in PDF to navigate through pdf.
+\usepackage{url}						                                        % Package that adds 'real' urls. with \url
+\usepackage[small,bf,hang]{caption}                                             % Improves caption
+\usepackage[final]{pdfpages}                                                    % import pdfs
+\usepackage{pslatex}					                                        % Other fonts than default
+\usepackage{lipsum}                                                             % Load ipsum texts with \ipsum, see docs.
+\usepackage{sectsty}					                                        % Better styling control of section headers & chapters.
+\usepackage{float}                                                              % Required to position figures
+\usepackage{style-template}                                                     % Import style template.
+\usepackage{wrapfig}                                                            % Package that helps positioning figures.
+\usepackage{appendix}                                                           % Provide more commands to control the appendices
+\usepackage{glossaries}                                                         % Package used to create glossary
+\makeglossaries                                                                 % Required before the first glossary entry.
+
+\graphicspath{{figures/}}                                                       % Set default search path for figures (./figures).
+\nocite{*}                                                                      % Show references that are not cited specifically.
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of Content}}          % Change title above ToC to Table of Content (default: Contents).
+
+
+% Settings for appendices
+\renewcommand{\appendixtocname}{List of appendices}                             % Change title for in ToC from 'appendix' to 'List of appendices'.
+                                                              
+
+% Preface arguments
+\acknowledgementspagetrue                                                       % Enable acknowledgment page.
+\acknowledgements{acknowledgments}	                                            % preface.tex containing the preface content.
+\abstractpagetrue                                                               % Enable abstract page.
+\abstracts{abstract}		                                                    % abstract.tex containing abstract's content
+\listoffigurespagetrue                                                          % Enable list of figures
+\listoftablespagetrue                                                           % Enable list of tables
+\listofglossariespagetrue                                                       % Enable glossaries
+\listofglossaries{glossary}			                                        % glossary.tex containing list of abbreviations
+
+% Variables Used in title page
+\title{Implementation of a Data Analytics layer on top of complex datasets}                 
+\subtitle{The complete lifecycle. }  
+\institution{University College Howest}                                                 
+\fieldOfStudy{Computer and Cybercrime Professional}                 
+\releaseDate{June 2020}                                                                 
+\author{Van Severen Emiel}                                                      % Author (can also be used throughout the document. If required.
+\promoterAtype{Internal supervisor}                                             % Internal supervisor
+\promoterAname{Mr. K. Sys}                                                      % Name internal supervisor
+\promoterBtype{External promoter}                                               % Name External promoter
+\promoterBname{Mr. P. Vancompernolle}
+
+
+\input{glossary.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                           BEGIN DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\selectlanguage{english}
+
+\preface                            % contains everything until the chapters start
+\input{./chapters/chapter1}
+\input{./chapters/chapter2}
+\input{./chapters/chapter3}
+\input{./chapters/chapter4}
+\input{./chapters/chapter5}
+\input{./chapters/chapter6}
+\input{./chapters/chapter7}
+\input{./chapters/conclusion}
+\input{./chapters/reflection}
+
+\bibliographystyle{apalike} 
+\bibliography{bibliography}         % Handles references.bib
+
+\noappendicestocpagenum             % Remove pagenumber of ToC entry.
+\addappheadtotoc                    % Add Entry to ToC. 
+\appendix                           % Files imported after this tag will be seen as appendixes
+\input{appendices/app1}
+
+\end{document}
