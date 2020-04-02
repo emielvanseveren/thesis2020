@@ -2,41 +2,46 @@
 \chapter{Skyline Communications}
 \section{Brief history}
 
-Skyline Communications was founded in 1985 by Mr. Leo. Vandenberghe. The company started off as a local distributor of telecom infrastructure. Their were renowned for their great expertise and support. in the mid 90's, Skyline Communications also emerged as an expert supplier of network management solutions. After the turn of the century, Skyline Communications repositioned itself and became a software vendor. Their mission: Redefine how complex broadcast and telecom systems will be managed in the future. They introduce their revolutionary \dm network management solutions.
+Skyline Communications was founded in 1985 by Mr. Leo. Vandenberghe. The company started off as a local distributor of telecom infrastructure. In the mid 90's, Skyline Communications also emerged as a supplier of network management solutions. After the turn of the century, Skyline Communications has repositioned itself and became a software vendor. Over the years it became clear that the complexity of the broadcast and telecom systems was only increasing. They introduced their revolutionary \dm network management solutions.
 
-Shortly thereafter Mr. Leo. Vandenberghe passed the company on to his progeny. In the following years Ben Vandenberghe takes on the role of CEO, Bert Vandenberghe became CTO and Frederik Vandenberghe became CFO. 
+Shortly thereafter Mr. Leo. Vandenberghe passed the company on to his progeny. In the following years Ben Vandenberghe took on the role of CEO, Bert Vandenberghe became CTO and Frederik Vandenberghe became CFO. 
 
-Currently Skyline Communications has more than 300 employees with new employees joining almost every day. 
-The company has branches in Singapore, Lisbon, Miami with its HQ is located in Izegem. 
+\section{Current position}
+
+Currently Skyline Communications has over 300 employees with new employees joining almost every day. 
+The company has branches in Singapore, Lisbon, Miami, with its HQ located in Izegem. 
 The HQ is a brand new building called the Skyline Park. (\url{https://skylinepark.be/})
 
-Among the customer we find almost all major media groups worldwide (e.g. BBC, SKY), a number of telecom giants (e.g. Verizon) but also the European Space Agency, the European Parliament, to name but a few. 
+Among the customers we find almost all the major media groups worldwide (e.g. BBC, SKY), a number of telecom giants (e.g. Verizon) but also the European Space Agency, the European Parliament, to name but a few. 
 
 We can say with full conviction that Skyline Communications has taken a leading position in the market of vendor-independent network management solutions in the \gls{hfc} broadband, broadcast, satellite and telecom industry. 
 
 \section{\dm platform}
 
+The \dm platform has been an ongoing work in progress for over \underline{20 years}. It is therefore very extensive. Below are a few of the core components:
+
 
 \subsection{DataMiner Driver}
-A driver specifies how DataMiner interacts with a third-party device or system, i.e. what protocol to use, which information is retrieved and how it is processed... The drivers are designed in an XML markup format, enabling any third-party to develop new drivers. Skyline provides training sessions in the Skyline Academy. 
+A Driver, often referred to as a \textit{protocol}, is an XML file that allows the DMA to communicate with a device in the system. The file describes which information is retrieved and how it is processed, how to actively sampling its status, display real-time data, alarm thresholds, parameter labels..
+
+Since the drivers are designed in an XML markup format, \underline{any} third-party is able to develop these drivers. Skyline even provides training sessions for companies to create their own protocols. This is called the  
+
+An example of a protocol is called Microsoft Platform. The protocol makes use of \gls{wmi} to communicate and remotely manage Windows devices. For reference, this XML file is approximately 12000 lines of code. To this day Skyline supports 5500+ drivers. 
+
 
 \subsection{DataMiner Agent}
-A DataMiner Agent or DMA is a single server in a DataMiner System (\gls{dms}). A DMA has the ability to manage a certain number of devices and systems. In practice you won't have one DMA, but a cluster of DMA's automatically acting as one big DMS.
+
+A DataMiner Agent or \textit{\gls{dma}} is a piece of hardware running the DataMiner software. It makes use of DataMiner Drivers to aggregate data from various devices and systems that are part of the network. In practice you won't have one DMA, but a cluster of DMA's automatically acting as one big \textit{\gls{dms}}.  
 
 \subsection{DataMiner Cube}
-The DataMiner Cube is the main user interface of the \dm platform. It has a wide range of functionalities. It offers alarm and performance management tools, user collaboration capabilities, automation scripts, redundancy groups...
+The DataMiner Cube is the main user interface to connect to a DMA. The broad range of functionalities allow you to manage very complex telecom environments. It offers alarm thresholds, performance management tools, user collaboration capabilities, correlation strategies,  automation scripts, redundancy groups and many other features. 
 
 \subsection{DataMiner Dashboards}
- DataMiner Dashboards is one of the many side web applications. Dashboards can be used to visually track, analyze and display the Key Performance Indicators. The dashboards can be completely user-defined. Operators can create custom dashboards to their own needs. Since the information is a web application it is accessible on every device, even on mobile.
+ DataMiner Dashboards is one of the many standalone web applications. It can be used to visually track, analyse all kinds of data on a dashboard. The dashboards can be completely user-defined. Operators can create custom dashboards to their own needs. Since the information is a web application it is accessible on every device, even on mobile. A screen capture of a dashboard can be found in \autoref{dataminer_dashboards}.
+ 
  
 \subsection{Other Applications}
-For those interested, here is a list of other applications. DataMiner Monitoring, DataMiner Ticketing, DataMiner Jobs, DataMiner Collaboration, DataMiner Catalog. 
+For those who are interested, here is a list of other applications. DataMiner Monitoring, DataMiner Ticketing, DataMiner Jobs, DataMiner Collaboration, DataMiner Catalog. 
 
-
-You can find these explanation on: \url{https://skyline.be}
-
-\section{Internship assignment}
-
-
-
+You can find a more detailed explanation on: \url{https://skyline.be}
 

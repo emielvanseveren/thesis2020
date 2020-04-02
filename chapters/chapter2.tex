@@ -1,13 +1,25 @@
 \chapter{Research topic}
 
+\section{The purpose of the DataMiner Dashboards application}
+
+
+Ultimately, it is the intention that the dashboards can, at least, offer the following items. 
+
+\begin{itemize}
+
+    \item{Clients should be able to select their own form of data visualization. E.g. states, tables, charts, feeds, and feature these with compatible data.}
+    \item{Clients should be able to create their own dashboards tailored to their own needs. For instance, the clients should be able to be style the dashboard components based on their own corporate design.}
+    \item{Clients should be able to interact with data by creating actions for e.g. buttons, time ranges, Visio components...}
+\end{itemize}
+
 \section{Problem}
+The dashboards application is heading in the right direction, but is far from completion. There are a few issues that are interrelated: 
 
+\begin{itemize}
+    \item{There are no chart components available at the moment.}
+    \item{There is no possibility to filter or aggregate data. This could be done in the browser but customers often have very large datasets consisting out of thousands of rows and hundreds of columns. Processing this is in the browser would be too slow.}
+    \item{Customers have very complex and divergent datasets. it is therefore a challenge to make a clear, reusable data structure in advance.}
+    \item{As stated before the datasets are often very large. This data can be filtered or aggregated but it does imply a small dataset. This data should still be easy to use and visually pleasing for the customer.}
+\end{itemize}
 
-
-
-
-
-
-
-
-
+This research revolves around developing a data analytics layer. The first step is to create a good experience. This applies to both the user, who should be able to easily filter and visualize data, and the developer, who should easily be able to manipulate the data.
