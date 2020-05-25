@@ -8,7 +8,7 @@
 \usepackage{listings}	                                                        % Typeset programming code
 \usepackage{verbatim}					                                        % show code, commands, ...
 \usepackage{hyperref}					                                        % Hyperlinks in PDF to navigate through pdf.
-\usepackage{url}						                                        % Package that adds 'real' urls. with \url
+\usepackage{url}						                                        % Package that adds 'real' urls. with \url. 
 \usepackage[small,bf,hang]{caption}                                             % Improves caption
 \usepackage[final]{pdfpages}                                                    % import pdfs
 \usepackage{pslatex}					                                        % Other fonts than default
@@ -20,6 +20,7 @@
 \usepackage{wrapfig}                                                            % Package that helps positioning figures.
 \usepackage{appendix}                                                           % Provide more commands to control the appendices
 \usepackage{glossaries}                                                         % Package used to create glossary
+\usepackage{minted}                                                             % Code highlighting
 \makeglossaries                                                                 % Required before the first glossary entry.
 
 \graphicspath{{figures/}}                                                       % Set default search path for figures (./figures).
@@ -43,8 +44,8 @@
 \listofglossaries{glossary}			                                        % glossary.tex containing list of abbreviations
 
 % Variables Used in title page
-\title{Implementation of a Data Analytics layer on top of complex datasets}                 
-\subtitle{The complete lifecycle. }  
+\title{Visualizing large tabular data without sacrificing usability}                 
+\subtitle{User Experience Research}  
 \institution{University College Howest}                                                 
 \fieldOfStudy{Computer and Cybercrime Professional}                 
 \releaseDate{June 2020}                                                                 
@@ -70,10 +71,10 @@
 \input{./chapters/chapter4}
 \input{./chapters/chapter5}
 \input{./chapters/chapter6}
-\input{./chapters/chapter7}
 \input{./chapters/conclusion}
 \input{./chapters/reflection}
 
+\nocite{*}                          % Prints all references even if they are not cited.
 \bibliographystyle{apalike} 
 \bibliography{bibliography}         % Handles references.bib
 
@@ -81,5 +82,7 @@
 \addappheadtotoc                    % Add Entry to ToC. 
 \appendix                           % Files imported after this tag will be seen as appendixes
 \input{appendices/app1}
+\input{appendices/app2}
+
 
 \end{document}

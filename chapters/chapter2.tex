@@ -1,25 +1,49 @@
 \chapter{Research topic}
 
-\section{The purpose of the DataMiner Dashboards application}
+\section{Generic interface}
+As stated before, my internship revolved around development withinthe the DataMiner Dashboards application. More specifically, the usage of \underline{the generic interface}\footnote{Generic interface is an internal name for a certain custom functionality. It is \textbf{not} a common term. However it is derived from generic types. Something that is \textit{often} used in typed programming languages. }.
+
+Although the generic interface provides little to no contribution to the outcome of the paper. It is the origin of my research and it provides a very interesting inside on how a large company solves certain problems.
+
+\subsection{The problem}
+Currently the Dashboards application has \textbf{no} data analytics layer. Data can be visualized but can not be filtered or aggregated. \textit{There are some utilities that provide filtering in the front end.}
 
 
-Ultimately, it is the intention that the dashboards can, at least, offer the following items. 
 
+\subsection{What is it}\label{section-generic-interface}
+ \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.3]{generic-interface-flow.png}
+        \caption{Scheme generic interface}
+        \label{fig:generic-interface-flow}
+    \end{figure}
+\subsubsection{The flow of the generic interface}
+    \begin{enumerate}
+        \item{A user sends a request that contains a certain query. The query can be seen as a predefined structure comparable to an SQL query but with more capabilities to filter and on a higher level.}
+        \item{Although I am not completely aware of the inner working, the generic interface maintains / collects data from different sources based on the provided query.}
+        \item{The gathered data is filtered based on that same query.}
+        \item{A response is sent back to the user in the shape of a \underline{flattened table}.}
+    \end{enumerate}  
+   
+\section{flattened table}\label{generic-interface-flattened-table}
+
+\subsection{Table}
+Since the data is returned in a flat table it would be nice if this can be immediately visualized. A table is a rather simple but yet \textbf{very} powerful way to visualize information.
+
+Due to the large amounts of data that Skyline's customers have to deal with, these tables often exist out of thousands of rows and dozens of columns. A table with these amounts of data quickly becomes inconvenient, obscure and generally not worth using. The main question took shape: 
+\begin{center}
+\textbf{How can we visualize large tabular data without sacrificing usability?}
+\end{center}
+
+** requires connection**
 \begin{itemize}
-
-    \item{Clients should be able to select their own form of data visualization. E.g. states, tables, charts, feeds, and feature these with compatible data.}
-    \item{Clients should be able to create their own dashboards tailored to their own needs. For instance, the clients should be able to be style the dashboard components based on their own corporate design.}
-    \item{Clients should be able to interact with data by creating actions for e.g. buttons, time ranges, Visio components...}
+    \item {Who are the users?}
+    \item {What kind of functionalities do the users expect?}
+    \item {What issues are they dealing with?}
+    \item {Does Skyline solves certain issues already?}
+    \item {Can the table be filtered to become easier to handle?}
 \end{itemize}
 
-\section{Problem}
-The dashboards application is heading in the right direction, but is far from completion. There are a few issues that are interrelated: 
+\textbf{Note:} Although the focus is on Skyline Communications and the paper being completely written with Skyline in mind. The results will apply to other elaborations.
 
-\begin{itemize}
-    \item{There are no chart components available at the moment.}
-    \item{There is no possibility to filter or aggregate data. This could be done in the browser but customers often have very large datasets consisting out of thousands of rows and hundreds of columns. Processing this is in the browser would be too slow.}
-    \item{Customers have very complex and divergent datasets. it is therefore a challenge to make a clear, reusable data structure in advance.}
-    \item{As stated before the datasets are often very large. This data can be filtered or aggregated but it does imply a small dataset. This data should still be easy to use and visually pleasing for the customer.}
-\end{itemize}
-
-This research revolves around developing a data analytics layer. The first step is to create a good experience. This applies to both the user, who should be able to easily filter and visualize data, and the developer, who should easily be able to manipulate the data.
+\textbf{The goal is should still be defined.}
