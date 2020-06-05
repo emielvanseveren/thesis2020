@@ -1,86 +1,55 @@
-\chapter{Research}
+\chapter{Short explanation of the tools}\label{explanation-tools}
+Before we compare the tools, a brief explanation. When were they found? What are they focused on? Where do they excel? 
 
-    \section{User personas}
-         The user personas represent Skyline communications customers. more specifically those who use the DataMiner Dashboards application. The user personas can be found in \autoref{user_personas}.
-    \section{User stories}
-        \begin{itemize}
-            \item {}
-            \item {}
-            \item {}
-            \item {}
-        \end{itemize}
-        \begin{itemize}
-            dit moeten er 15 a 20 zijn.
-            \item {As a user I can sort columns, so that I immediately see the highs and lows.}
-            \item {As a user I can filter the columns, so that irrelevant data is not shown. }
-            \item {As a user I can swap columns, so that the most relevant data is immediately visible.}
-            \item {As a user I can resize columns, so that they take up less space.}
-        \end{itemize}
-    \section{Use cases}
-        
-    \section{DataMiner Dashboards competitors}
-        As a company you don't always have to reinvent the wheel. It can be very useful to see how competitors solve certain problems. But who are Skyline DataMiner Dashboards' biggest competitors? How do they \textbf{visualize} large tabular data?
-        
-        \subsection{Tableau}
-        \subsubsection{What is Tableau?}
-        Tableau is \underline{the} leading Business Intelligence software (\gls{bis}). With Tableau users can easily retrieve, analyze, transform and report data. It enables users to effortlessly visualize data \textbf{regardless of its format}. The software is very easy to use and does not require any knowledge of coding. What makes Tableau so unique compared to others is their quality of data visualizations and self-service analytics. It was found in 2003 by Christian Chabot, Pat Hanrahan and Chris Stolte. In August 2019, Tableau was acquired by \href{https://www.salesforce.com/}{Salesforce} for a stunning \textbf{15 Billion dollars}.
-       \subsubsection{Table} 
-         
-       
-        \subsection{Power BI}
-        \subsubsection{What is Power BI?}
-        Power BI is a \underline{b}usiness \underline{i}ntelligence software developed by Microsoft. It is completely integrated with Office 365, which makes it very easy to import data from applications like Excel. Power BI has only been released in 2014 but was immediately seen as a competitor for tableau. Compared to Tableau, power Bi has a free desktop applications for individuals.
-        
-        \subsubsection{Table}
-        
-        \subsection{Kibana}
-        \subsubsection{What is Kibana?} 
-        Elastic is a search company 
-        Kibana is a browser-based analytics and search dashboard for Elasticsearch, a powerful, \textbf{open source}, search engine. Although it is classified as a Monitoring tool, while the other discussed software are business intelligence software, Kibana provides very appealing and thoughtful visualizations.
-        \subsubsection{Table}
-        
-        \subsection{Other}
-        \begin{itemize}
-            \item{Oracle BI}
-            \item{Geckoboard}
-            \item{Sisense}
-            \item{Dundas Data Visualization}
-            \item{SAP Business Objects}
-            \item{Domo}
-        \end{itemize}
-        
-    \section{Prototypes}
-        \subsection{Prototyping software}
-        The world of prototyping is a very saturated market with a broad range of tools within reach. Each tool has its strengths and weaknesses. 
-    
-        \begin{itemize}
-            \item {Adobe XD}
-            \item {Sketch}
-            \item {Figma}
-            \item {Invision}
-            \item {Framer X}
-            \item {Axure}
-        \end{itemize}
-   
-        As the time span of this research is very limited we decided to go with Adobe XD. It is known for being easy to use. Completely free and works on Windows. 
-    
-    \subsection{Limitations} 
-    Although prototyping software tools are rapidly improving and adding new features persistently. They are often limited to the \textbf{visual} design.
-   
-    One of the first \textit{Major} issues is the lack of support of \textbf{horizontal scroll bars}. Due to the large amount of columns that these tables contain, they often no longer fit into a single \gls{viewport}.
-    
-    Next to that there is no support for right click events, double click events, resizing components... 
-    
-    Although Axure supports \textit{most} of these features. It is known for having a \textbf{very steep} learning curve. Due to the limited time span and not knowing its exact capabilities, there is is no other option than to work this out with code.
-    
-\section{Design}
-    the design here.
+\section{Adobe XD}
+Adobe XD is a user experience software manufactured by Adobe. Until 2010 Adobe Photoshop was considered the go-to design tool for both user experience and user interfaces. This completely changed with the release of Sketch, see \autoref{explanation-tools-sketch}. Adobe could not immediately respond but after a series of beta releases, Adobe released Adobe XD (Experience Design) in October 2017. 
 
-\section {User Scenarios}
+The numbers of users is increasing rapidly. Adobe does its utmost to release new features as fast as possible. It is compatible with both Windows and macOS, allowing files to be easily exchanged between the operating systems, countering Sketch's macOS only software.
 
-\section{Evaluation}
-    \subsection{User Feedback}
-    user feedback here
-    \subsection{UI Audit reports}
-    ui audit reports here
-    
+\section{Figma}
+Figma is a cloud-based user experience software released in May 2016. It runs completely in the browser and therefore works on any operating system: macOS, Windows, Linux... 
+
+It was presumed that the web application would lack in performance. To date, Figma is able to match Sketch's native performance and can even outshine it in some cases . Jamie Wong, a developer at Figma, wrote an article about performance: \url{https://www.figma.com/blog/figma-faster}
+
+Figma has also attached a lot of importance to team collaboration. They are convinced that collaboration makes or breaks a tool. Several people should be able to view and edit files simultaneously.
+
+\section{Invision Studio}\label{sec:invision-explanation}
+Invision Studio is a very new user experience software released in the beginning of 2019. With its software it has mainly focused on allowing designers to build very advanced animations and interactions. This is beautifully displayed in a promotional video found at the top of the following page, \url{https://www.invisionapp.com/studio}.
+
+Studio is just one of Invision's applications. The company tries to encompass the entire design flow. Below are the other software they offer:
+
+\begin{itemize}
+    \setlength\itemsep{-0.5em}    
+    \item{Invision Inspect, an application specifically designed for developers. As a developer you don't want to spend hours switching between prototypes and your design to make things look right. Invision Inspect will automatically translate prototypes into detailed specs.}
+    \item{Invision Craft, a plugin for Sketch and Photoshop to automate tedious actions }
+    \item{Invision Freehand, an infinite whiteboard to rapidly capture feedback and work out ideas collaboratively without spending time to make it presentable}
+    \item{InVision DSM, short for Design System Manager, is a platform specifically created for team collaboration. It brings developers, designers and stakeholders into a unified workflow.
+    }
+\end{itemize}
+
+\section{Framer}
+Two product designers at Facebook, K. Bok and J. Van Dijk, often found themselves pitching new application ideas. At the time, the prototypes they presented were static. They contained no interaction, no animations. Both of them felt frustrated with the few possibilities they had to create interactive prototypes.
+
+Originally, they created Framer.js, a Javascript framework, to create interactive prototypes using code. The framework became very popular. They decided to create a macOS application that brings together the framework with a visual editor. That way you can immediately see the results, but you can also change visual aspects with ease.
+
+This expanded to a tool called Framer X. Which to this day is still actively in development, but limited to macOS. With the rise of Figma, a web-based prototyping tool. Framer took notes and released Framer on web. Framer on web is still very new. It released the 28th of May, a week before this is written. They are slowly moving away from the coding experience and are adding more design capabilities, comparable to those from Figma.
+
+\section{Axure RP}
+Axure RP, short for rapid prototyping, is one of the first advanced prototyping tools ever created. In fact this year the software tool celebrates its 15th anniversary. 
+
+When it comes to prototyping Axure has taken a very different approach compared to its competitors. Software like Sketch and Adobe XD put visual design first, until lately prototyping was additional. Axure on the other hand is specifically build for functional prototyping and interactions.
+
+Although visual design can be done in Axure, it is also possible to import design files from Adobe XD, Sketch and Figma.
+
+However the learning curve of Axure is quiet steep. For instance, in \autoref{fig:axure-interaction-example}, you can see a screen capture of Axure's interactions panel. It contains an if-statement that triggers when the page loads. 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.5]{figures/axure-rp/interaction-example.png}
+\caption{Axure interaction.}
+\label{fig:axure-interaction-example}
+\end{figure}
+
+\section{Sketch}\label{explanation-tools-sketch}
+Sketch is user experience software developed by the Dutch company Bohemian Coding. It was first released in September 2010. When Sketch first came out it completely disrupted the world of user experience. It had new prototyping concepts and collaboration functionalities that no other tool had. In 2012 they received an Apple Design Award for their very appealing design, which they were able to maintain up to this day.
+
+Compared to the other tools Sketch is very mature and has age on his side. Although Sketch is only for macOS it has a large community and a well maintained third party plugin market. To this day it is still considered the industries favourite.
